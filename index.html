@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>CSS selectors cheatsheet</h1>
-      <h2>Element selectors</h2>
+      <h2>Element, class and ID selectors</h2>
       <table>
         <tr>
           <th>Name</th>
@@ -14,9 +14,75 @@
           <th>Description</th>
         </tr>
         <tr>
-          <th>Element</th>
-          <th>a {}</th>
-          <th>Type selector</th>
+          <td>Element</td>
+          <td><code>h2 {}</code></td>
+          <td>Selects all h2 elements on the page</td>
+        </tr>
+        <tr>
+          <td>Group</td>
+          <td><code>h1, h2, h3{}</code></td>
+          <td>selects all h1, h2 and h3 elements on the page.</td>
+        </tr>
+        <tr>
+          <td>Class</td>
+          <td><code>p {}</code></td>
+          <td>Selects all elements with class attribute containing foo.</td>
+        </tr>
+        <tr>
+          <td>Combining Class</td>
+          <td><code>p.foo {}</code></td>
+          <td>Selects all elements with class attribute containing only p elements with foo</td>
+        </tr>
+        <tr>
+          <td>ID</td>
+          <td><code>#foo {}</code></td>
+          <td>selects the element with 'foo' id attribute value</td>
+        </tr>
+      </table>
+    <h2>Contextual selectors</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Tag</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Descendant</td>
+          <td><code>#foo p {}</code></td>
+          <td>Selects all p elements within the infinite-level hierarchy of element #foo descendants</td>
+        </tr>
+        <tr>
+          <td>Adjacent sibling</td>
+          <td><code>h2 + p {}</code></td>
+          <td>Selects the sibling element p that is immediately next to h2 element</td>
+        </tr>
+        <tr>
+          <td>Child</td>
+          <td><code>#foo > p {}</code></td>
+          <td>Selects all elements p that are siblings to the h2 element</td>
+        </tr>
+        <tr>
+          <td>General sibling</td>
+          <td><code>h2 ~ p {}</code></td>
+          <td>Selects all elements p that are siblings to the h2 element</td>
+        </tr>
+      </table>
+    <h2>Pseudo-class selectors</h2>
+      <table>
+        <tr>
+          <td></td>
+          <td><code></code></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><code></code></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><code></code></td>
+          <td></td>
         </tr>
       </table>
   </body>
