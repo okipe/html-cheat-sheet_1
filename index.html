@@ -68,21 +68,85 @@
         </tr>
       </table>
     <h2>Pseudo-class selectors</h2>
+    <h3>Pseudo-class selectors for link and user states</h3>
       <table>
         <tr>
-          <td></td>
-          <td><code></code></td>
-          <td></td>
+          <th>Name</th>
+          <th>Tag</th>
+          <th>Description</th>
         </tr>
         <tr>
-          <td></td>
-          <td><code></code></td>
-          <td></td>
+          <td>Unvisited link</td>
+          <td><code>a:link {}</code></td>
+          <td>Applies to link elements that have not been visited</td>
         </tr>
         <tr>
-          <td></td>
-          <td><code></code></td>
-          <td></td>
+          <td>Visited link</td>
+          <td><code>a:visited {}</code></td>
+          <td>Applies to link elements that have been visited</td>
+        </tr>
+        <tr>
+          <td>Focus state</td>
+          <td><code>.foo:focus {}</code></td>
+          <td>Applies to selected .foo element that is ready for input</td>
+        </tr>
+        <tr>
+          <td>Hover state</td>
+          <td><code>.foo:hover {}</code></td>
+          <td>Applies when mouse pointer is over the .foo element</td>
+        </tr>
+        <tr>
+          <td>Active state</td>
+          <td><code>.foo:active {}</code></td>
+          <td>Applies when .foo element is in process of being clicked</td>
+        </tr>
+      </table>
+    <h3>Pseudo-class selectors that apply to siblings</h3>
+      <table>
+        <tr>
+          <td>First child</td>
+          <td><code>.foo:first-child {}</code></td>
+          <td>Selects the specified .foo element when it is the first child of its parent</td>
+        </tr>
+        <tr>
+          <td>Last child</td>
+          <td><code>.foo:last-child {}</code></td>
+          <td>Selects the specified .foo element when it is the last child of its parent</td>
+        </tr>
+        <tr>
+          <td>Only child</td>
+          <td><code>.foo:only-child {}</code></td>
+          <td>Selects the specified .foo element when it is the only child of its parent</td>
+        </tr>
+        <tr>
+          <td>First of type</td>
+          <td><code>h2:first-of-type {}</code></td>
+          <td>Selects the h2 element when it is the first element of its type within its parent element</td>
+        </tr>
+        <tr>
+          <td>Last of type</td>
+          <td><code>h2:last-of-type {}</code></td>
+          <td>Selects the h2 element when it is the last element of its type within its parent element</td>
+        </tr>
+        <tr>
+          <td>Only of type</td>
+          <td><code>h2:only-of-type {}</code></td>
+          <td>Selects the h2 element when it is the only element of its type within its parent element</td>
+        </tr>
+        <tr>
+          <td>Nth child</td>
+          <td><code>.foo:nth-child(n) {}</code></td>
+          <td>Selects the nth .foo child element</td>
+        </tr>
+        <tr>
+          <td>Nth last child</td>
+          <td><code>h2:nth-of-type(n) {}</code></td>
+          <td>Selects the nth h2 child element of its type</td>
+        </tr>
+        <tr>
+          <td>Nth last of type</td>
+          <td><code>h2:nth-last-of-type(n) {}</code></td>
+          <td>Selects the nth h2 child element of its type counting backwards</td>
         </tr>
       </table>
   </body>
