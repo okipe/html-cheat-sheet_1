@@ -2,9 +2,16 @@
   font-family: sans-serif;
 }
 
+body{
+  background-color: AntiqueWhite;
+  max-width: 1000px;
+  margin: auto;
+}
+
 .table {
 	width:100%;
 }
+
 
 th{
   background:#000;
@@ -13,5 +20,5 @@ th{
 
 code{
   font-family: monospace;
-
+  background-color: AliceBlue;
 }
